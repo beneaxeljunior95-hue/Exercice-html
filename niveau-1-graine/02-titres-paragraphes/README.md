@@ -39,14 +39,14 @@ Ouvrez `index.html` dans le navigateur **avant** de commencer : tout le texte es
 
 ## Critères de réussite
 
-- [ ] Il y a un seul `<h1>` dans la page.
-- [ ] Les niveaux de titres se suivent sans saut : pas de `<h3>` directement après le `<h1>`.
-- [ ] Il y a 4 `<h2>` et 4 `<h3>`.
-- [ ] Plus aucun texte n'est « libre » dans le `<body>` : tout est dans une balise.
-- [ ] *Zea mays* est dans une balise `<i>`.
-- [ ] Il y a au moins deux `<strong>` et un `<em>`.
-- [ ] `<br>` n'est utilisé qu'une seule fois, dans les crédits (et jamais pour « faire de l'espace »).
-- [ ] Le code est indenté et commenté.
+- [x] Il y a un seul `<h1>` dans la page.
+- [x] Les niveaux de titres se suivent sans saut : pas de `<h3>` directement après le `<h1>`.
+- [x] Il y a 4 `<h2>` et 4 `<h3>`.
+- [x] Plus aucun texte n'est « libre » dans le `<body>` : tout est dans une balise.
+- [x] *Zea mays* est dans une balise `<i>`.
+- [x] Il y a au moins deux `<strong>` et un `<em>`.
+- [x] `<br>` n'est utilisé qu'une seule fois, dans les crédits (et jamais pour « faire de l'espace »).
+- [x] Le code est indenté et commenté.
 
 ## Indices
 
@@ -93,9 +93,23 @@ Le `<br>` se place **à l'intérieur** du paragraphe, entre les deux lignes à s
 ## Questions de compréhension
 
 1. Pourquoi ne doit-il y avoir qu'un seul `<h1>` par page ? (Pensez aux moteurs de recherche.)
+
+Le <h1> représente le titre principal de la page. Il permet aux visiteurs et aux moteurs de recherche comme Google de comprendre rapidement le sujet principal du contenu. Il est donc préférable d'utiliser un seul <h1> pour bien organiser la page.
+
 2. Pourquoi ne faut-il pas choisir une balise de titre (`<h2>`, `<h3>`…) pour sa **taille** d'affichage ?
+
+Les balises de titre servent à organiser les informations selon leur importance et leur hiérarchie, et non à modifier simplement la taille du texte.
+
 3. Quelle est la différence entre `<strong>` et `<b>` ? Entre `<em>` et `<i>` ?
+
+<strong> indique qu'un mot ou une phrase est important.
+<b> met un texte en gras sans indiquer qu'il est particulièrement important.
+<em> sert à insister sur un mot ou une expression.
+<i> permet de présenter un terme scientifique, étranger ou technique sans exprimer une insistance particulière.
+
 4. Que fait le navigateur quand il rencontre plusieurs espaces ou retours à la ligne dans le code ?
+
+Le navigateur regroupe les espaces successifs et les retours à la ligne en un seul espace lors de l'affichage de la page.
 
 ## Lien avec le brief PlantEvo
 
