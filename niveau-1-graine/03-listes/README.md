@@ -35,13 +35,13 @@
 
 ## Critères de réussite
 
-- [ ] Un `<h1>` et trois `<h2>`.
-- [ ] Le matériel est dans un `<ul>` avec 5 `<li>`.
-- [ ] Les étapes sont dans un `<ol>` avec 5 `<li>` principaux.
-- [ ] Les sous-étapes sont dans des `<ol>` placés **à l'intérieur** d'un `<li>` (et non directement dans le `<ol>` parent).
-- [ ] Aucun numéro n'est tapé à la main dans le texte.
-- [ ] Le lexique utilise `<dl>`, `<dt>` et `<dd>`.
-- [ ] Un `<ul>` ou un `<ol>` ne contient **que** des `<li>`.
+- [x] Un `<h1>` et trois `<h2>`.
+- [x] Le matériel est dans un `<ul>` avec 5 `<li>`.
+- [x] Les étapes sont dans un `<ol>` avec 5 `<li>` principaux.
+- [x] Les sous-étapes sont dans des `<ol>` placés **à l'intérieur** d'un `<li>` (et non directement dans le `<ol>` parent).
+- [x] Aucun numéro n'est tapé à la main dans le texte.
+- [x] Le lexique utilise `<dl>`, `<dt>` et `<dd>`.
+- [x] Un `<ul>` ou un `<ol>` ne contient **que** des `<li>`.
 
 ## Indices
 
@@ -95,12 +95,21 @@ La sous-liste se place **dans** le `<li>`, juste après son texte, **avant** la 
 
 - Ajoutez l'attribut `type="a"` aux sous-listes : les sous-étapes sont alors numérotées a, b, c.
 - Ajoutez une partie « Top 3 des légumes faciles à cultiver » avec une liste ordonnée **à rebours** (3, 2, 1) grâce à l'attribut `reversed`.
-- Testez l'attribut `start="4"` sur un `<ol>` : que se passe-t-il ?
+- Testez l'attribut `start="4"` sur un `<ol>` : que se passe-t-il ? (C’est le navigateur qui calcule les numéros : seul le point de départ change, la suite s’incrémente automatiquement.)
 
 ## Questions de compréhension
 
 1. Quelle est la différence entre `<ul>` et `<ol>` ? Donnez un exemple d'utilisation pour chacune.
+
+<ul> (unordered list) est une liste à puces : l’ordre des éléments n’a pas d’importance.
+Exemple : le matériel nécessaire (graines, terreau, arrosoir...).
+<ol> (ordered list) est une liste numérotée : l’ordre compte.
+Exemple : les étapes de plantation (semer, repiquer, tuteurer...).
+
 2. Quelles balises peut-on placer directement dans un `<ul>` ?
+
+Uniquement des balises <li>. 
+
 3. Le saviez-vous ? Pour un botaniste, la tomate est un **fruit** : elle se forme à partir de la fleur et contient les graines. En cuisine, on la range pourtant avec les légumes.
 
 ## Lien avec le brief PlantEvo
