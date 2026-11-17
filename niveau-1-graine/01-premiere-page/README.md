@@ -42,14 +42,14 @@ Aucun ! Ce dossier ne contient que cette consigne. C'est vous qui créez le fich
 
 ## Critères de réussite
 
-- [ ] Le fichier s'appelle `index.html` et se trouve dans le dossier `01-premiere-page`.
-- [ ] La première ligne est `<!DOCTYPE html>`.
-- [ ] La balise `<html>` a l'attribut `lang="fr"`.
-- [ ] Le `<head>` contient `meta charset`, `meta viewport` et un `<title>` personnalisé.
-- [ ] Le `<body>` contient exactement un `<h1>` et au moins un `<p>`.
-- [ ] Chaque balise ouverte est fermée (sauf `<meta>`, qui n'a pas de balise fermante).
-- [ ] Le code est indenté : chaque balise « enfant » est décalée de 2 espaces par rapport à son « parent ».
-- [ ] Les accents s'affichent correctement dans le navigateur.
+- [X] Le fichier s'appelle `index.html` et se trouve dans le dossier `01-premiere-page`.
+- [X] La première ligne est `<!DOCTYPE html>`.
+- [X] La balise `<html>` a l'attribut `lang="fr"`.
+- [X] Le `<head>` contient `meta charset`, `meta viewport` et un `<title>` personnalisé.
+- [X] Le `<body>` contient exactement un `<h1>` et au moins un `<p>`.
+- [X] Chaque balise ouverte est fermée (sauf `<meta>`, qui n'a pas de balise fermante).
+- [x] Le code est indenté : chaque balise « enfant » est décalée de 2 espaces par rapport à son « parent ».
+- [x] Les accents s'affichent correctement dans le navigateur.
 
 ## Indices
 
@@ -79,14 +79,26 @@ Une fois que vous savez écrire la structure de mémoire, VS Code peut la géné
 ## Bonus
 
 - Ajoutez un deuxième paragraphe : ce que vous aimeriez créer comme site web à la fin de la formation.
-- Créez une copie de votre fichier et changez seulement le `<title>`. Ouvrez les deux pages dans deux onglets : voyez-vous la différence ?
+- Créez une copie de votre fichier et changez seulement le `<title>`. Ouvrez les deux pages dans deux onglets : voyez-vous la différence ? oui
 
 ## Questions de compréhension
 
 1. Quelle est la différence entre le `<head>` et le `<body>` ?
+
+La balise <head> contient les informations générales et techniques de la page, comme son titre et l'encodage des caractères. La balise <body> contient tous les éléments visibles par les visiteurs, comme les titres, les paragraphes et les images.
+
 2. À quoi sert l'attribut `lang="fr"` ? (Pensez aux lecteurs d'écran et aux moteurs de recherche.)
+
+Il permet d'indiquer au navigateur que la langue principale de la page est le français. Il facilite la compréhension du contenu par les lecteurs d'écran et aide les moteurs de recherche à identifier la langue du site.
+
 3. À quoi sert la ligne `<!DOCTYPE html>` ?
+
+Elle indique au navigateur que le document utilise la version HTML5. Elle permet au navigateur d'interpréter correctement la structure de la page.
+
 4. Pourquoi est-il utile d'écrire des commentaires dans son code, alors qu'ils ne s'affichent pas ?
+
+Les commentaires permettent d'expliquer le fonctionnement de certaines parties du code, de mieux organiser le travail et de faciliter la compréhension du programme lorsqu'on souhaite le modifier ou le relire plus tard.
+
 
 ## Lien avec le brief PlantEvo
 
