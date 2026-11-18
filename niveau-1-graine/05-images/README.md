@@ -56,18 +56,22 @@ Les numéros correspondent aux commentaires `TODO` dans `index.html`.
 5. **Image cliquable** : faites de l'image de la mangue un lien vers `https://fr.wikipedia.org/wiki/Mangue`. Pour cela, placez la balise `<img>` **à l'intérieur** d'une balise `<a>`. Adaptez le `alt` : il doit maintenant décrire la destination du lien (relisez le tableau ci-dessus).
 6. **Expériences** :
    - Supprimez `width` et `height` sur une image : que se passe-t-il ? Remettez-les.
+  sans `width`  et `height` : l’image est devenue beaucoup plus grande ! Elle prend presque toute la place.
    - Mettez `width="300"` et `height="100"` : l'image est-elle déformée ? Remettez les bonnes valeurs.
+l’image est devenue toute plate et large, un peu écrasée.
    - Renommez temporairement `tomate.svg` en `tomate2.svg` (dans l'explorateur de fichiers) et rechargez la page : qu'affiche le navigateur à la place de l'image ? Remettez le bon nom.
+   l’image a disparu et j’ai vu une petite icône cassée avec mon texte alt à côté
+
 
 ## Critères de réussite
 
-- [ ] Les 4 images s'affichent.
-- [ ] Chaque `<img>` a un attribut `alt` utile (pas de « image de… », pas de nom de fichier).
-- [ ] Chaque `<img>` a un `width` et un `height` qui respectent les proportions (4 / 3).
-- [ ] Le chemin du maïs passe par le sous-dossier `cereales`.
-- [ ] La tomate est dans une `<figure>` avec une `<figcaption>`.
-- [ ] Un clic sur la mangue ouvre l'article Wikipédia.
-- [ ] Tous les chemins sont relatifs.
+- [x] Les 4 images s'affichent.
+- [x] Chaque `<img>` a un attribut `alt` utile (pas de « image de… », pas de nom de fichier).
+- [x] Chaque `<img>` a un `width` et un `height` qui respectent les proportions (4 / 3).
+- [x] Le chemin du maïs passe par le sous-dossier `cereales`.
+- [x] La tomate est dans une `<figure>` avec une `<figcaption>`.
+- [x] Un clic sur la mangue ouvre l'article Wikipédia.
+- [x] Tous les chemins sont relatifs.
 
 ## Indices
 
@@ -111,10 +115,16 @@ Comparez lettre par lettre :
 ## Questions de compréhension
 
 1. À quoi sert l'attribut `alt` ? Citez deux situations où il est utilisé.
+L’attribut alt fournit une description textuelle de l’image, qui remplace l’image quand elle ne peut pas être vue. Deux situations :
+-Image qui ne se charge pas (connexion lente, mauvaise URL, fichier supprimé) : le navigateur affiche le texte alt à la place.
+-Lecteur d’écran : une personne aveugle ou malvoyante entend la description de l’image. Le référencement (SEO) en profite aussi, car les moteurs de recherche utilisent alt pour comprendre l’image.
 2. Pourquoi indiquer `width` et `height` alors que l'image s'affiche très bien sans ?
+Avec ces deux attributs, le navigateur connaît les dimensions de l’image avant de la télécharger et réserve l’espace correspondant dans la page. Sans eux, la page « saute » quand l’image arrive : le texte est repoussé vers le bas.
 3. Quand doit-on écrire `alt=""` (vide) ?
+Quand l’image est purement décorative et n’apporte aucune information : un trait de séparation, un fond d’ambiance, une icône qui répète le texte à côté. Les lecteurs d’écran ignorent alors l’image au lieu de lire inutilement le nom du fichier. Il faut quand même garder l’attribut : l’omettre complètement est une erreur, car le lecteur d’écran lirait l’URL de l’image.
 4. Quelle est la différence entre `<figcaption>` et `alt` ?
-
+`alt` est un texte de remplacement, caché dans la balise <img> : il ne s’affiche que si l’image ne charge pas ou est lue par un lecteur d’écran, et il décrit ce que montre l’image.
+<figcaption> est une légende toujours visible, placée dans un <figure> : elle ajoute du contexte (titre, source, commentaire).
 ## Lien avec le brief PlantEvo
 
 Le brief demande « 80 % d'images et 20 % de texte » : les images sont au cœur de votre projet. Le jury vérifiera la qualité des images, leurs textes alternatifs, et le fait que le site n'utilise pas trop de liens externes. Pensez aussi à citer la source de chaque image.
