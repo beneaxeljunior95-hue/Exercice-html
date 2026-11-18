@@ -72,23 +72,23 @@ Les numéros correspondent aux commentaires `TODO` dans les fichiers.
 
 | Page de départ | Lien | Destination attendue | Fonctionne ? |
 |---|---|---|---|
-| `index.html` | Nos cultures | `cultures.html` | |
-| `index.html` | Nous contacter | `pages/contact.html` | |
-| `index.html` | Site de la FAO | fao.org (nouvel onglet) | |
-| `cultures.html` | Retour à l'accueil | `index.html` | |
-| `cultures.html` | Article Wikipédia | wikipedia.org | |
-| `pages/contact.html` | Retour à l'accueil | `index.html` | |
-| `pages/contact.html` | Nos cultures | `cultures.html` | |
-| `pages/contact.html` | Adresse e-mail | logiciel de messagerie | |
+| `index.html` | Nos cultures | `cultures.html` | oui |
+| `index.html` | Nous contacter | `pages/contact.html` |oui |
+| `index.html` | Site de la FAO | fao.org (nouvel onglet) | oui|
+| `cultures.html` | Retour à l'accueil | `index.html` | oui|
+| `cultures.html` | Article Wikipédia | wikipedia.org | oui|
+| `pages/contact.html` | Retour à l'accueil | `index.html` | oui|
+| `pages/contact.html` | Nos cultures | `cultures.html` | oui|
+| `pages/contact.html` | Adresse e-mail | logiciel de messagerie |oui |
 
 ## Critères de réussite
 
-- [ ] Les 8 liens du tableau fonctionnent.
-- [ ] Tous les liens internes utilisent des chemins **relatifs** (aucun `C:\…` ni `file:///…`).
-- [ ] Le lien de retour de `pages/contact.html` utilise `../`.
-- [ ] Le lien vers la FAO s'ouvre dans un nouvel onglet et contient `rel="noopener"`.
-- [ ] Le lien e-mail commence par `mailto:`.
-- [ ] Plus aucun lien « cliquez ici » : chaque texte de lien a du sens tout seul.
+- [x] Les 8 liens du tableau fonctionnent.
+- [x] Tous les liens internes utilisent des chemins **relatifs** (aucun `C:\…` ni `file:///…`).
+- [x] Le lien de retour de `pages/contact.html` utilise `../`.
+- [x] Le lien vers la FAO s'ouvre dans un nouvel onglet et contient `rel="noopener"`.
+- [x] Le lien e-mail commence par `mailto:`.
+- [x] Plus aucun lien « cliquez ici » : chaque texte de lien a du sens tout seul.
 
 ## Indices
 
@@ -124,9 +124,20 @@ C'est normal si aucun logiciel de messagerie n'est configuré sur votre ordinate
 ## Questions de compréhension
 
 1. Quelle est la différence entre un chemin relatif et une URL absolue ? Quand utilise-t-on l'un ou l'autre ?
+
+l’URL absolue (https://...) est l’adresse complète, pour pointer vers un autre site. Le chemin relatif (pages/contact.html) part de la page actuelle, pour relier les pages de son propre site.
+
 2. Que signifie `../` dans un chemin ?
+
+remonter d’un dossier.
+
 3. Pourquoi faut-il éviter les espaces et les majuscules dans les noms de fichiers ?
+
+ils causent des erreurs dans les adresses web, et beaucoup de serveurs distinguent Contact.html de contact.html. Un lien qui marche en local peut casser en ligne.
+
 4. Pourquoi « cliquez ici » est-il un mauvais texte de lien ?
+
+hors contexte, il ne dit rien de la destination, ce qui pénalise les lecteurs d’écran. Un bon texte décrit la destination.
 
 ## Lien avec le brief PlantEvo
 
